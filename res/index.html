@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<p><button onclick="myMove(), opacitate(brate)">Prove it > Jobshop</button></p> 
+	
+		<div id ="animPRV">
+			<img src="img/Proveit.png"  style="height: 10em; width: auto" />
+		  <div id ="animJS">
+			<img src="sd.png"  style="height: 10em; width: auto " />
+		  </div>  
+		</div>
+		<div id="brate">
+				<img src="img/manaDreapta.jpg"  style="height: 10em; width: auto" />
+			<div id="stanga">
+				<img src="img/manaStanga.jpg"  style="height: 10em; width: auto" />
+			</div>
+
+		</div>
+		<script>
+		var id = null;
+		function myMove() {
+		  var PRV = document.getElementById("animPRV");  
+		  var JS = document.getElementById("animJS"); 
+		  var brate = document.getElementById("brate"); 
+		  var posPRV = 0;
+		  var posJS=-60;
+		  var posBrate=0;
+		  var mySound;
+		  mySound = new sound("img/bomba.mp3");
+		  JS.style.opacity=1;
+		  brate.style.opacity=0;
+		  clearInterval(id);
+		  id = setInterval(frame, 20);
+		  function frame() {
+			if (posPRV == 35 || posJS==140) 
+			{
+				mySound.play();
+			}
+			if (posPRV == 50 || posJS==180) {
+			  clearInterval(id);
+			  JS.style.opacity=0
+
+
+			} else {
+			  posPRV++; 
+			  posJS=posJS +0.9;
+			  posBrate++;		
+			  JS.style.right = posJS + "%"; 
+			  PRV.style.left = posPRV + "%"; 
+			  brate.style.left = posBrate + "%"; 
+			}
+			
+		  }
+		}
+		function opacitate(ceva) {
+			setTimeout(function(){ ceva.style.opacity=1; }, 1500);
+		;
+		}
+		function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }    
+}
+		</script>
+	</div>
+<style>
+	#animJS {
+		z-index: 0;
+		display: inline;
+		position: absolute;
+		margin-left: 60%;
+		margin-bottom: 80%;
+	}
+
+	#animPRV {
+		z-index: 1;
+		position: absolute;
+		margin-top: 10%;
+		margin-left: 0%;
+	}
+	#brate
+	{
+		opacity: 0;
+		z-index: 1;
+		position: absolute;
+		margin-top: 8%;
+		margin-left: 33%;
+	}
+	#stanga
+	{
+		display: inline;
+		opacity: 1;
+		z-index: 2;
+		position: absolute;
+		margin-top: 5%;
+		margin-left: -590%;
+	}
+
+</style>
+</body>	
+<script src="ese.js"></script>
+</html>

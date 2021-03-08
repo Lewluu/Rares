@@ -1,0 +1,57 @@
+
+body{
+	background-image: url("res/back.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+}
+#axis {
+	border: 3px;
+	margin-top: 19%;
+	}
+	
+	#axis img {
+	float: left;
+	transition: all 1s ease-in;
+
+	}
+	#axis .move-right
+	{
+		position: absolute;
+		margin-left: 0%;
+	}
+	#axis .move-left
+	{
+		position: absolute;
+		margin-left: 90%;
+	}
+	#axis:hover .move-right {
+		transform: translateX(0px);
+		-webkit-transform: translateX(0);
+		-o-transform: translateX(0);
+		-moz-transform: translateX(0);
+	}
+	#axis:hover .move-left{
+	animation-name: proveit;
+	animation-duration: 2000ms;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0);
+	-o-transform: translateX(0);
+	-moz-transform: translateX(0);
+	opacity: 0;
+	}
+@keyframes proveit{
+		0%{
+		  opacity: 1;
+		}
+		90%
+		{
+			opacity: 0.9;
+		}
+		100%{
+		  display: none;
+		  opacity: 0;
+		}
+	  }

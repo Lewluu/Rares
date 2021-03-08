@@ -1,0 +1,223 @@
+
+body{
+	background-image: url("res/background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+}
+.sticky {
+	position: sticky;
+	top: 0;
+	width: 100%
+  }
+  
+.bara_de_navigare
+{
+	padding-top: 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(16,139,130,0.5);
+	z-index: 4;
+	border-color: rgb(77, 194, 189);
+	border-bottom-style: solid;
+	border-width: 3px;
+	max-height: 20%;
+}
+.timer
+{
+	color: rgb(255, 255, 255);
+	font-size:  3.3vw;
+	display: flex;	
+	align-items: center;
+	text-align: center;
+}
+.timer p{
+	margin:auto;
+}
+#demo{
+	position: absolute;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin-left: 40%;
+	top: 0;
+}
+
+
+
+.siglaJS{
+	padding: 10px;
+	margin-top: 2px;
+	width: 15%;
+	max-width: 20%;
+	min-height: 2%;
+}
+.siglaBEST{
+	position: absolute;
+	margin-top: 7px;
+	width: 10%;
+	max-width: 20%;	
+	margin-left: 74%;
+}
+.content {
+	padding: 16px;
+	margin-top: 5%;
+}
+.sticky + .content {
+	padding-top: 102px;
+  }
+.scris{
+	float: left;
+	text-align:left;
+	margin-left: 5%;
+	margin-top: 2%;
+	width: 50%;
+	padding: 5px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: white;
+	font-size:  5.3vw;
+	animation: ani 1s ease-out 0.2s forwards;
+
+}
+.racheta{
+	position: absolute;
+	z-index: 1;
+	margin-left: 40%;
+	height: auto;
+	margin-top: 3%;
+	transform: rotate(15deg);
+}
+.inscriere{
+	animation: ani 1s ease-out 0.2s forwards;
+	overflow: hidden;
+	width:70%;
+    height:auto;
+}
+.inscriere a{
+	text-decoration: none;
+	color: ivory;
+	
+}
+.inscriere a:hover{
+	text-decoration: none;
+	color: #5aafa9;
+	
+}
+.inscriere p{
+	padding: 0px;
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: white;
+	font-size:  2.3vw;
+}
+
+.inscriere .content{
+	position:sticky;
+	font-weight: 500;
+	z-index: 2;
+	font-size: 1.4375vw;
+	max-width: 50%;
+	margin-left: 7%;
+	padding: 5px;
+	margin-top: 0%;
+	text-align: left;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color:ivory;
+}
+.inscriere .formular{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color:ivory;
+	font-size:1.1vw;
+	margin-top: 0%;
+	margin-left: 7%;
+	text-align: left;
+	margin-bottom: 0%;
+}
+input
+{
+	color:ivory;
+	outline: none;
+	background-color: rgb(60,130,196);
+	border-color: rgb(60,130,196);
+}
+.btn-primary
+{
+	background-color: rgb(60,130,196)!important;
+	border-color: rgb(60,130,196)	!important	;
+}
+.btn-lg {
+	border-radius: 4px;
+	background-color: #f8693e !important;
+	border: none;
+	color: ivory;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	position: absolute;
+	left: 53%;
+	transform: translate(-70%, -92%);
+  }
+  .btn-lg span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .btn-lg span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .btn-lg:hover span {
+	padding-right: 25px;
+  }
+  
+  .btn-lg:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+.social-media{
+	position: absolute;
+	margin-left: 65%;
+	margin-top: -8.5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.social-media a
+{
+	padding-top: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+a{
+
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+
+ @media only screen and (max-width: 485px)
+{
+	.siglaJS{
+		margin-top: 2%;
+		padding: 2px;
+		max-width: 30%;
+		min-height: 2%;
+	}
+	.siglaBEST{
+		width: 400px;
+		max-width: 24%;
+		margin-left: 80%;
+	}	
+}

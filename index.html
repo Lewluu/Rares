@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JobShop&#174;</title>
+	<link rel="stylesheet" type="text/css" href="mainnou.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+	<div class="bara_de_navigare" id="myHeader" >
+		<a href="https://iasi.jobshop.ro/" target="_blank"><img src="res/logo_jobshop_albastru_rgb.png" class="siglaJS" ></a>
+		<a href="https://bestis.ro/" target="_blank" ><img src="res/BESTiasi.png" class="siglaBEST"></a>
+		<div class="timer"> <p id="demo"></p> 
+		</div>
+	</div>
+	<div class="content">
+	<div class="scris">
+		<p><b>We're gonna be back soon!</b></p>
+	</div>
+	<div class="racheta">
+		<img src="res/racheta.png" style="height: 40em; width: auto;" >
+	</div>
+
+	<div class="inscriere">
+		<p class="content">În fiecare an JobShop® reunește
+			companii renumite, care doresc să
+			comunice cu studenţii și absolvenţii
+			interesaţi de oportunităţi în carieră. Pentru a fi la curent cu ediția JobShop&#174 2021
+			te poți abona la newsletter:
+		</p><br>
+	<div id="eroare" style="height: 1vw;"></div>
+	<script type="text/javascript">var submitted = false;</script>
+	<!-- <iframe name = "hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){window.location ='indexnou.html'}" ></iframe> -->
+	<form action="https://forms.gle/gnPCkFBBbbkLgYf39" method="post" target="hidden_iframe" autocomplete="off" onsubmit="submitted=true" id="test-form">
+		<div class= "formular">
+		<label for="name">Nume</label><br>
+		<input type="text" name="name" id="Nume" required><br>
+		<label for="adresa">E-mail</label><br>
+		<input type="text" name="adresa" id="email" required><br>
+		<!-- <input type="checkbox" class="Data" name="Data"  id="Data">
+		<label  for="Data">Sunt de acord cu reglementările <a href="https://drive.google.com/file/d/1DGd-VM9jLtC8hjep3pXO0bSYGnvHsOjy/view?usp=sharing"
+			 target=_blank> GDPR BEST Iași</a></label> -->
+
+		<input type="submit" name="Submit" class="btn btn-primary" id="submit">
+		</div>
+	</form>
+	</div>
+	<a href="https://iasi.jobshop.ro/" target="_blank"><button type="button" class="btn btn-primary btn-lg" ><span>Vezi aici ediția 2020</span></button></a>
+
+	<div class="social-media">
+		<a href="https://www.facebook.com/jobshop.iasi" target="_blank"><img src="res/fb2.png" onmouseover="hoverFacebook(this)" onmouseout="unhoverFacebook(this)"></a>
+		<a href="https://www.instagram.com/bestiasi/?hl=en" target="_blank"><img src="res/insta2.png" onmouseover="hoverInstagram(this)" onmouseout="unhoverInstagram(this)"></a> 
+		<a href="https://www.linkedin.com/company/best-iasi/" target="_blank"><img src="res/linkedin2.png" onmouseover="hoverLinkedin(this)" onmouseout="unhoverLinkedin(this)"></a>
+		<a href="https://www.youtube.com/channel/UC1DuRUKQkxWv7cgeihAm79w" target="_blank" ><img src="res/yt2.png" onmouseover="hoverYoutube(this)" onmouseout="unhoverYoutube(this)"></a>
+	</div>
+
+	</div>
+	<script src="timer.js"></script>
+	<script src="ese.js"></script>
+<script type="text/javascript">
+	function hoverFacebook(element){
+		element.setAttribute('src',"res/fb1.png");
+	}
+	function unhoverFacebook(element){
+		element.setAttribute('src','res/fb2.png');
+	}
+		function hoverInstagram(element){
+		element.setAttribute('src',"res/insta1.png");
+	}
+	function unhoverInstagram(element){
+		element.setAttribute('src','res/insta2.png');
+	}
+		function hoverLinkedin(element){
+		element.setAttribute('src',"res/linkedin1.png");
+	}
+	function unhoverLinkedin(element){
+		element.setAttribute('src','res/linkedin2.png');
+	}
+		function hoverYoutube(element){
+		element.setAttribute('src',"res/yt1.png");
+	}
+	function unhoverYoutube(element){
+		element.setAttribute('src','res/yt2.png');
+	}
+
+</script>
+
+<script>
+
+function stickyNavbar(){
+    window.onscroll = function() {getSticky()};
+
+    var navbar=document.getElementById("myHeader");
+    var sticky=navbar.offsetTop;
+
+    function getSticky(){
+        if(window.pageYOffset >= sticky){
+            navbar.classList.add("sticky");
+            navbar.classList.remove("notsticky");
+        }
+        else{
+            navbar.classList.add("notsticky");
+            navbar.classList.remove("sticky");
+        }
+    }
+}
+
+</script>
+    </body>
+</html>

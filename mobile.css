@@ -1,0 +1,242 @@
+body{
+	background-image: url("res/back.png");
+	background-position: center ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+.bara_de_navigare
+{
+	width: 100%;
+	min-width: 100wv;
+}
+.racheta{
+	opacity: 1;
+	padding: 1px;
+
+}
+.racheta img{
+	margin: 1em;
+	position: absolute;
+	position: absolute;left: 30%; top: 75em;
+	height:  20em;
+	width: auto;  transform: rotate(20deg);
+}
+p{
+	padding: 0px;
+	margin: 0px;
+	font-family: "CeraPro";
+	color: white;
+	font-size:  10em;
+
+}
+.scris{
+	position: absolute; left: 5em; top:0em;
+	padding: 0px;
+	margin-top: 30em;
+	height: 50em;
+	width: 60em;
+	text-align: center;
+	opacity: 0;
+	animation: ani 1s ease-out 0.2s forwards;
+
+}
+.scocial-media{
+	padding: 0;
+	margin:0;
+}
+
+a:hover{
+	text-decoration: none!important;
+}
+.racheta{
+	opacity: 0;
+	position: absolute;left: 30%; top: 35em;
+}
+.newsletter {
+    position: relative; top: 2em;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font-size:  3em;
+	width: 10em;
+	height: 2.3em;
+	padding-top: 0.4em;
+	background-color: #F5843D;
+	font-family: "Helvetica";
+	text-align: center;
+	border-radius:3em;
+	animation: 3s infinite colorChange;
+	margin-left: 25%;
+	opacity:0.8;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+
+}
+.newsletter:hover{
+	background-color: #f8a116;
+	animation: none !important;
+	opacity: 1;
+
+}
+.newsletter a{
+	display: block;
+	color: white;
+	height: 100%;
+}
+.newsletter a:hover{
+	color:white;
+}
+
+
+.inscriere{
+	opacity: 0;
+	 position:absolute; left:23%;top: 40em;
+	   width:40em;
+      height:47em;
+      background-color: white;
+      margin: 0 auto;
+      border-radius: 5em;
+      text-align: center;
+      animation: ani 1s ease-out 0.2s forwards;
+
+    }
+
+.inscriere p{
+	padding: 0px;
+	margin: 0px;
+	font-family: "Arial Rounded MT";
+	color: #01244E;
+
+}
+.inscriere .titlu{
+		padding-top: 1em;
+		font-size:5em;
+}
+.inscriere .content{
+	font-size: 2em;
+
+}
+.inscriere form{
+	border-color: #707070;
+	text-align: center;
+	padding-top: 0em;
+	font-family: "Roboto";
+	font-size:1.9em;
+}
+.inscriere label{
+	text-align: left;
+	padding-right:50%;
+}
+.inscriere input{
+	width: 15em;
+	border-radius: 50em;
+	border-color: #707070;
+
+}
+.Data{
+position: relative;
+top:0.5em;
+left:-7em;
+width: 5em;
+}
+.inscriere .DataLabel{
+	font-size: 0.7em;
+	position: relative;
+	top: -0.9em;
+	left:7em;
+	width: auto;
+	margin: 0em;
+	padding-right: 30%;
+}
+
+.inscriere .buton:hover{
+	background-color: #f8a116;
+}
+.inscriere .buton{
+text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.45);
+box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+margin-top: .4em;
+background-color: #F5853F;
+color: white;
+width: 10em;
+	}
+#eroare{
+	padding: 0px;
+	margin: 0px;
+	color: red;
+	font-family: "Roboto";
+	font-size: 1.7em;
+}
+@keyframes ani{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes ani2{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes colorChange{
+	0%{
+		background-color: #f8a116;
+	}
+	
+	50%{
+		background-color: #F5843D;
+}
+	100%{
+		background-color:  #f8a116;
+
+	}
+}
+
+@media (max-widht:900){
+	
+}
+.social-media{
+	position: absolute; top: 100em;
+	width: 100%;
+	text-align: center}
+.social-media a{
+	width: auto;
+	height: auto;
+	margin: 2em;
+}
+.social-media img {
+	width: 7em;
+	display: inline-block;
+	
+}
+
+/*.insta{
+position:absolute;bottom: 20em;width: 7em;}
+.facebook{
+position:absolute; bottom: 20em; width: 7em;
+}
+.linkedin{
+position:absolute;;bottom: 20em;width: 7em;
+}
+.youtube{
+	position:absolute;bottom: 20em;width: 7em;
+}*/
+.siglaJS{
+width: 15em;
+}
+.siglaBEST{
+	position: absolute;
+	max-width: 200px;
+	top: 10px;
+	right: 10px;
+}
