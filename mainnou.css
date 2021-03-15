@@ -1,6 +1,6 @@
 
 body{
-	background-image: url("res/background.png");
+	background-image: url("res/back.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -15,27 +15,27 @@ body{
   
 .bara_de_navigare
 {
-	padding-top: 10px;
+	padding-top: 2vw;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: rgba(16,139,130,0.5);
+	background-color: rgba(16,139,130,0.7);
 	z-index: 4;
-	border-color: rgb(77, 194, 189);
+	border-color:rgba(27, 170, 161, 0.7);
 	border-bottom-style: solid;
-	border-width: 3px;
+	border-width: 0.2vw;
 	max-height: 20%;
 }
-.timer
+.bara_de_navigare .timer
 {
 	color: rgb(255, 255, 255);
-	font-size:  3.3vw;
+	font-size:  3.5vw;
 	display: flex;	
 	align-items: center;
 	text-align: center;
 }
-.timer p{
-	margin:auto;
+.bara_de_navigare .timer p{
+	margin-top: 2vw;
 }
 #demo{
 	position: absolute;
@@ -44,47 +44,44 @@ body{
 	top: 0;
 }
 
-
-
 .siglaJS{
-	padding: 10px;
-	margin-top: 2px;
-	width: 15%;
-	max-width: 20%;
-	min-height: 2%;
+	padding: 0.1vw;
+	margin-top: 0.1vw;
+	margin-left: 2%;
+	width: 15vw;
+	margin-bottom: 1.3vw;
 }
 .siglaBEST{
 	position: absolute;
-	margin-top: 7px;
-	width: 10%;
-	max-width: 20%;	
-	margin-left: 74%;
+	left: 83%;
+	top: 1vw;
+	width: 13vw;	
+	height: auto;
 }
 .content {
 	padding: 16px;
 	margin-top: 5%;
 }
 .sticky + .content {
-	padding-top: 102px;
+	padding-top: 80vw;
   }
-.scris{
+.titlu{
 	float: left;
 	text-align:left;
 	margin-left: 5%;
 	margin-top: 2%;
 	width: 50%;
-	padding: 5px;
+	padding: 0.4vw;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	color: white;
-	font-size:  5.3vw;
+	color: ivory;
+	font-size:  5vw;
 	animation: ani 1s ease-out 0.2s forwards;
 
 }
 .racheta{
 	position: absolute;
 	z-index: 1;
-	margin-left: 40%;
-	height: auto;
+	left: 45%;
 	margin-top: 3%;
 	transform: rotate(15deg);
 }
@@ -108,19 +105,18 @@ body{
 	padding: 0px;
 	margin: 0px;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	color: white;
+	color: ivory;
 	font-size:  2.3vw;
 }
 
 .inscriere .content{
-	position:sticky;
+	position: sticky;
 	font-weight: 500;
 	z-index: 2;
 	font-size: 1.4375vw;
 	max-width: 50%;
 	margin-left: 7%;
-	padding: 5px;
-	margin-top: 0%;
+	padding: 1vw;
 	text-align: left;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	color:ivory;
@@ -129,39 +125,51 @@ body{
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	color:ivory;
 	font-size:1.1vw;
-	margin-top: 0%;
-	margin-left: 7%;
+	margin-top: -2%;
+	margin-left: 8%;
 	text-align: left;
 	margin-bottom: 0%;
 }
-input
+.formular input
 {
-	color:ivory;
-	outline: none;
-	background-color: rgb(60,130,196);
-	border-color: rgb(60,130,196);
+	color:black;
+	border-radius: 10%; 
+	box-shadow: 0.1vw 0.2vw 0.3vw black;
+	background-color: #c8f7c5;
+	opacity: 0.5;
+	border-color: ivory;
 }
 .btn-primary
 {
-	background-color: rgb(60,130,196)!important;
-	border-color: rgb(60,130,196)	!important	;
+	color: ivory!important;
+	padding: 5vw;
+	margin-top:1%;
+	margin-left: 8%;
+	background-color: #0A3055!important;
+	border-color: ivory	!important	;
 }
 .btn-lg {
-	border-radius: 4px;
+
+	margin-top: -0.0%;
+	border-radius: 0em;	
+	border-color: #f8693e !important	;	
 	background-color: #f8693e !important;
-	border: none;
 	color: ivory;
 	text-align: center;
-	font-size: 28px;
-	padding: 20px;
-	width: 200px;
+	font-size: 2vw;
+	max-height: 10vw;
+	padding: 0vw;
+	width: 10vw;
+	height: 6.5vw;
 	transition: all 0.5s;
 	cursor: pointer;
 	position: absolute;
-	left: 53%;
-	transform: translate(-70%, -92%);
+	left: 45%;
+	transform: translate(-70%, -97%);
   }
+
   .btn-lg span {
+	font-size: 1.3vw;
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -173,12 +181,12 @@ input
 	position: absolute;
 	opacity: 0;
 	top: 0;
-	right: -20px;
+	right: -0.5em;
 	transition: 0.5s;
   }
   
   .btn-lg:hover span {
-	padding-right: 25px;
+	padding-right: 2em;
   }
   
   .btn-lg:hover span:after {
@@ -188,8 +196,8 @@ input
 
 .social-media{
 	position: absolute;
-	margin-left: 65%;
-	margin-top: -8.5%;
+	left: 70%;
+	top: 40.5vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -207,17 +215,109 @@ a{
 }
 
 
- @media only screen and (max-width: 485px)
+ @media only screen and (max-width: 700px)
 {
 	.siglaJS{
 		margin-top: 2%;
-		padding: 2px;
-		max-width: 30%;
-		min-height: 2%;
+		padding: 0vw;
+		width: 15vw;
+		height: auto;
 	}
 	.siglaBEST{
-		width: 400px;
-		max-width: 24%;
-		margin-left: 80%;
+		position: absolute;
+		left: 80%;
+		top: 2vw;
+		width: 14vw;	
+		height: auto;
 	}	
+	.titlu{
+		z-index: 1;
+		width: 100%;
+        margin: auto;
+		margin-top: 6%;
+		font-size:  8vw;
+        text-align: center;
+	}
+	.racheta{
+		z-index: 0;
+		top: 13%;
+		transform: scale(1.5);
+		width: 20vw;
+		height: auto;
+		left: 55%;
+	}
+	.racheta-rotita
+	{
+		transform: rotate(15deg);
+	}
+    .inscriere{
+        width: 100%;
+        margin: auto;
+    }
+	.inscriere .content{
+		padding: 0;
+		text-align: center;
+		max-width: 100%;
+		top: 10%;
+        margin: auto;
+		font-size: 3.9vw;
+        width: 80%;
+	}
+    #test-form{
+        width: 50%;
+        margin: auto;
+    }
+	.inscriere .formular{
+		margin-top: 10%;
+		font-size:3.4vw;
+        width: 100%;
+        margin-left: auto;
+	}
+    input{
+        width: 100%;
+        margin: auto;
+    }
+	.btn-primary
+	{
+		padding: 5vw;	
+		margin-top:5%;
+		margin-left: 3%;
+		transform: scale(0.8);
+        margin-bottom: 25%;
+	}
+	.btn-lg {
+
+		/*margin-top: 10%;
+		text-align: center;
+		padding: 0vw;
+		width: 10vw;
+		height: 6.5vw;
+		left: 40%;*/
+		transform:scale(3);
+        margin: auto;
+	  }
+	
+	  .btn-lg span {
+        margin-top: 5%;
+		font-size: 1.4vw;
+		display: inline-block;
+		position: relative;
+		left: -3.5vw;
+		top: -3.4vw;
+		width: 8vw;
+		transition: 0.5s;
+	  }
+	.social-media{
+		position: absolute;
+		left: 40%;
+		top: 160.5vw;
+		transform: scale(2.7);
+	}
+	.social-media a
+	{
+		padding-top: 10%;
+		padding-left: 5%;
+		padding-right: 10%;
+	}
+
 }
